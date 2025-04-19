@@ -1,0 +1,6 @@
+pydantic
+ollama
+langchain
+langgraph
+langchain-ollama
+langchain-mcp-adapters
