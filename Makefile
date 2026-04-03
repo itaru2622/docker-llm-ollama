@@ -1,4 +1,4 @@
-img   ?=itaru2622/llm-ollama:bookworm
+img   ?=itaru2622/llm-ollama:trixie
 cName ?=ollama
 wDir  ?=${PWD}
 dDir  ?=${wDir}/data
