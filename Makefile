@@ -1,3 +1,4 @@
+base  ?=python:3.14-trixie
 img   ?=itaru2622/llm-ollama:trixie
 cName ?=ollama
 wDir  ?=${PWD}
@@ -9,7 +10,7 @@ cmd   ?=make llama_start model=${model}
 
 
 build:
-	docker build -t ${img} .
+	docker build --build-arg ${base} -t ${img} .
 start:
 	docker run -itd --name ${cName} -p ${port}:11434 \
         -v ${wDir}:/work -w /work \
