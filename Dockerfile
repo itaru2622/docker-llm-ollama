@@ -1,6 +1,6 @@
-ARG base=python:3.12-bookworm
+ARG base=python:3.14-trixie
 FROM ${base}
-ARG base=python:3.12-bookworm
+ARG base=python:3.14-trixie
 
 RUN apt update; apt install -y curl gnupg2 vim git make
 
