@@ -2,7 +2,7 @@ ARG base=python:3.14-trixie
 FROM ${base}
 ARG base=python:3.14-trixie
 
-RUN apt update; apt install -y curl gnupg2 vim git make
+RUN apt update; apt install -y curl gnupg2 vim git make zstd
 
 # https://python.langchain.com/docs/integrations/chat/ollama/
 RUN curl -fsSL https://ollama.com/install.sh | sh
